@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unmasked | Superhero Archives</title>
+    <link rel="preload" as="image" href="./images/DareDevil.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body id="top">
+    <nav id="nav">
+        <a class="logo" href="#top" aria-label="Unmasked home">
+            <span class="logo-mark">U</span>
+            <span class="logo-copy">
+                <strong>Unmasked</strong>
+                <small>Hero archives</small>
+            </span>
+        </a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu">
+            <li><a href="#top">Discover</a></li>
+            <li><a href="#slider">Archives</a></li>
+            <li><a href="#storyModal" data-open-story>Case Files</a></li>
+        </ul>
+        <span class="active-file">ACTIVE FILE: <strong id="activeHero">DAREDEVIL</strong></span>
+    </nav>
+    <main class="slider" id="slider" tabindex="0" aria-label="Superhero archives slider">
+        <!--slide 1-->
+        <div class="slide slide-daredevil active">
+            <div class="slide-bg" data-image="./images/DareDevil.jpg" style="background-image: url('./images/DareDevil.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="hero-emblem" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M12 14 25 26 32 18 39 26 52 14 46 43 32 54 18 43Z"/><path d="M22 37h20"/></svg></div>
+                <p class="slide-label">Archive 001 / Hell's Kitchen</p>
+                <h2 class="slide-name">Daredevil</h2>
+                <p class="slide-desc">The Man Without Fear. A relentless defender who turns heightened senses into a weapon against the night.</p>
+                <p class="slide-meta"><span>VIGILANTE</span><i></i><span>NEW YORK</span></p>
+                <div class="slide-btns">
+                    <button class="slide-btn slide-btn-primary" data-action="explore">Enter the Fight</button>
+                    <button class="slide-btn slide-btn-ghost" data-action="story">View Story</button>
+                </div>    
+            </div>
+        </div>
+
+        <!--slide 2-->
+        <div class="slide slide-punisher">
+            <div class="slide-bg" data-image="./images/Punisher.jpg" style="background-image: url('./images/Punisher.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="hero-emblem" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M12 31c0-13 9-23 20-23s20 10 20 23c0 8-4 13-10 17v8H22v-8c-6-4-10-9-10-17Z"/><path d="M21 29h8v8h-8zm14 0h8v8h-8zM25 47h14M29 54v-8m6 8v-8"/></svg></div>
+                <p class="slide-label">Archive 002 / The War Zone</p>
+                <h2 class="slide-name">Punisher</h2>
+                <p class="slide-desc">Frank Castle wages a one-man war on organized crime, armed with discipline, strategy, and an unbreakable resolve.</p>
+                <p class="slide-meta"><span>TACTICIAN</span><i></i><span>URBAN FRONT</span></p>
+                <div class="slide-btns">
+                    <button class="slide-btn slide-btn-primary" data-action="explore">Enter the Fight</button>
+                    <button class="slide-btn slide-btn-ghost" data-action="story">View Story</button>
+                </div>
+            </div>
+        </div>
+
+        <!--slide 3-->
+        <div class="slide slide-batman">
+            <div class="slide-bg" data-image="./images/Batman.jpg" style="background-image: url('./images/Batman.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="hero-emblem" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M6 28 18 31 25 24 32 29 39 24 46 31 58 28 49 39 42 38 32 52 22 38 15 39Z"/></svg></div>
+                <p class="slide-label">Archive 003 / Gotham City</p>
+                <h2 class="slide-name">Batman</h2>
+                <p class="slide-desc">A symbol forged in darkness. The world's greatest detective protects Gotham with preparation, precision, and purpose.</p>
+                <p class="slide-meta"><span>DETECTIVE</span><i></i><span>GOTHAM</span></p>
+                <div class="slide-btns">
+                    <button class="slide-btn slide-btn-primary" data-action="explore">Enter the Fight</button>
+                    <button class="slide-btn slide-btn-ghost" data-action="story">View Story</button>
+                </div>
+            </div>
+        </div>
+
+        <!--slide 4-->
+        <div class="slide slide-thor">
+            <div class="slide-bg" data-image="./images/Thor 5.jpg" style="background-image: url('./images/Thor 5.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="hero-emblem" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M22 8h20v18H22zM18 22h28v10H18zM29 32h8v24h-8z"/><path d="m22 12-8 8m28-8 8 8"/></svg></div>
+                <p class="slide-label">Archive 004 / Asgardian Files</p>
+                <h2 class="slide-name">Thor</h2>
+                <p class="slide-desc">The God of Thunder carries the storm into battle, wielding ancient power with the heart of a worthy hero.</p>
+                <p class="slide-meta"><span>GOD OF THUNDER</span><i></i><span>ASGARD</span></p>
+                <div class="slide-btns">
+                    <button class="slide-btn slide-btn-primary" data-action="explore">Enter the Fight</button>
+                    <button class="slide-btn slide-btn-ghost" data-action="story">View Story</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="arrows">
+            <button class="arrow" id="prev" aria-label="Previous hero" type="button"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6" />
+            </svg></button>
+            <button class="arrow" id="next" aria-label="Next hero" type="button"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6" />
+            </svg></button>
+        </div>
+
+        <!-- Counter -->
+        <div class="counter">
+            <span class="cur" id="cur">01</span>
+            <span class="line"></span>
+            <span>04</span>
+        </div>
+
+        <!-- Animated Dot Pills -->
+        <div class="dot-pills" id="pills">
+            <button class="pill active" data-i="0" aria-label="Go to Daredevil slide" type="button"></button>
+            <button class="pill" data-i="1" aria-label="Go to Punisher slide" type="button"></button>
+            <button class="pill" data-i="2" aria-label="Go to Batman slide" type="button"></button>
+            <button class="pill" data-i="3" aria-label="Go to Thor slide" type="button"></button>
+        </div>
+
+        <div class="slider-tools">
+            <button class="pause-control" id="pause" type="button" aria-label="Pause slideshow" aria-pressed="false">
+                <span class="pause-icon" aria-hidden="true"></span>
+                <span class="pause-text">Pause</span>
+            </button>
+            <div class="progress-info">
+                <span class="progress-name" id="progressName">DAREDEVIL</span>
+                <div class="progress-track" aria-hidden="true"><span class="progress-fill" id="progressFill"></span></div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="story-modal" id="storyModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" aria-label="Close story" data-close-modal>&times;</button>
+            <p class="modal-kicker">CASE FILE</p>
+            <h2 id="modalTitle">Daredevil</h2>
+            <p id="modalBody"></p>
+            <div class="hero-stats" aria-label="Hero statistics">
+                <div><span>POWER</span><strong id="statPower"></strong></div>
+                <div><span>STYLE</span><strong id="statStyle"></strong></div>
+                <div><span>STATUS</span><strong id="statStatus"></strong></div>
+            </div>
+            <p class="modal-fact" id="modalFact"></p>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
